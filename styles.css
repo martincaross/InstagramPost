@@ -1,0 +1,162 @@
+* {
+  font-family: "Liter", serif;
+  margin: 0;
+  /* border: 1px dashed red;
+  min-height: 10px; */
+  width: 100%;
+  height: 100%;
+}
+
+.liter-regular {
+  font-family: "Liter", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* A lo mejor aquí no hacía falta y no le meto margin-right a resume*/
+  width: 350px;
+  background-color: white;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 35px;
+}
+
+.userpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: white;
+  object-fit: cover;
+  margin-left: 5px;
+}
+
+.username {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.location {
+  font-size: 10px;
+}
+
+.options {
+  font-size: 20px;
+  display: flex;
+  width: 20px;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.options i:hover {
+  color: gray;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.imagen {
+  width: 100%;
+  position: relative;
+  object-fit: cover; /* La imagen cubrirá el espacio sin distorsionarse */
+}
+
+.icons {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.icons i {
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.icons i::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Hace el icono sólido */
+  position: absolute;
+  opacity: 0; /* Por defecto, está oculto */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fa-heart::after {
+  content: "\f004";
+  color: red;
+}
+
+.fa-comment::after {
+  content: "\f4ad";
+}
+
+.fa-paper-plane::after {
+  content: "\f1d8";
+}
+
+.fa-bookmark::after {
+  content: "\f02e";
+}
+
+.icons i:hover::after {
+  opacity: 1;
+}
+
+.save {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.resume {
+  width: auto;
+  height: 20px;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-right: 60px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
